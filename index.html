@@ -11,7 +11,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>Maurice Baez</title>
-    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
 
 <body>
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                     <div class="intro__img">
-                        <img src="images/maurice.png" alt="Man holding jackfruit">
+                        <img src="images/profilepic3.png" alt="Man holding jackfruit">
                     </div>
                 </div>
             </div>
@@ -96,11 +96,12 @@
             <div class="intro__container container">
                 <div class="intro__body">
                     <div class="about__img">
-                        <img src="images/profilepic.jpg" alt="Maurice trying to look ok">
+                        <img src="images/profpic2.jpg" alt="Maurice trying to look ok">
                     </div>
                     <div class="about__content">
                         <h1 class="intro__title">About <span>Me</span></h1>
-                        <p class="intro__text"><span>Welcome.</span> Hello - my name is Maurice, I’ve been working in healthcare as a Sonographer for the past 10 years. Here are some of the technologies I enjoy working with:</p>
+                        <p class="intro__text">Hello - my name is Maurice, I’ve been working in healthcare as a Sonographer for the past 10 years.
+                            Here are some of the technologies I enjoy working with:</p>
                     <div class="about__tech col-6">
                         <i class='about__icon bx bxl-javascript'></i>
                         <i class='about__icon bx bxl-nodejs'></i>
@@ -111,6 +112,10 @@
                         <i class='about__icon bx bxl-html5'></i>
                         <i class='about__icon bx bxl-css3'></i>
                         <i class='about__icon bx bxl-postgresql'></i>
+                        <i class='about__icon bx bxl-bootstrap'></i>
+                        <i class='about__icon bx bxl-jquery'></i>
+                        <i class='about__icon bx bxl-heroku'></i>
+                        <i class='about__icon bx bxl-github'></i>
                     </div>
                 </div>
             </div>
@@ -148,7 +153,9 @@
                             <div class="card-body">
                                 <h5 class="card-title">sharebnb</h5>
                                 <p class="card-text">A space sharing social networking web application where hosts can list their open spaces for rent. Features include; user registration and authentication and photo uploading capabilities with AWS S3</p>
-                                <a href= "">Demo</a> | <a href="https://github.com/maurice-baez/sharebnb-flask-backend">Github(BE)</a> | <a href="https://github.com/maurice-baez/sharebnb-react-frontend">Github(FE)</a>
+                            </div>
+                                <div class="portfolio__footer">
+                                    <a href= "">Demo</a> | <a href="https://github.com/maurice-baez/sharebnb-flask-backend">Github(BE)</a> | <a href="https://github.com/maurice-baez/sharebnb-react-frontend">Github(FE)</a>
                             </div>
                         </div>
 
@@ -158,7 +165,9 @@
                             <div class="card-body">
                                 <h5 class="card-title">Jobly</h5>
                                 <p class="card-text">Fullstack JavaScript job searching app built using React, Node/Express, and PostgreSQL. Features include login/signup, browse and apply for jobs, search jobs by company name using live search, and view the jobs posted by each company.</p>
-                                <a href= "https://red-bead.surge.sh/">Demo</a> | <a href="https://github.com/maurice-baez/react-express-jobly">Github</a>
+                            </div>
+                                <div class="portfolio__footer">
+                                    <a href= "https://red-bead.surge.sh/">Demo</a> | <a href="https://github.com/maurice-baez/react-express-jobly">Github</a>
                             </div>
                         </div>
 
@@ -167,7 +176,9 @@
                             <div class="card-body">
                                 <h5 class="card-title">Warbler</h5>
                                 <p class="card-text">Warbler is a Twitter clone built with Python, Flask, and PostgreSQL. Users can sign up/login, follow users, be followed by users, and create tweets called “warbles”. Other features added include; liking and unliking posts and functionality to edit the users profile and change the existing password.</p>
-                                <a href="https://sms.playstation.com/" class="btn btn-primary"></a>
+                            </div>
+                            <div class="portfolio__footer">
+                                <a href= "https://flask-warbler-app.herokuapp.com/">Demo</a> | <a href="https://github.com/maurice-baez/flask-warbler">Github</a>
                             </div>
                         </div>
 
@@ -176,8 +187,10 @@
                             <div class="card-body">
                                 <h5 class="card-title">Daily Workout App</h5>
                                 <p class="card-text">A web scraping application that sends users a text message every morning with the CrossFit.com's daily workout. Built using Python, Beautiful Soup, and the Twilio api.</p>
-                                <a href="https://github.com/maurice-baez/WOD" class="btn btn-primary"></a>
                             </div>
+                                <div class="portfolio__footer">
+                                    <a href= "">Demo</a> | <a href="https://github.com/maurice-baez/WOD">Github</a>
+                                </div>
                         </div>
 
                     </div>
@@ -196,12 +209,39 @@
                                 <div class="contact__left"></div>
                                 <div class="contact__right">
                                     <form action="https://formsubmit.co/maurice.baez1@gmail.com" method="POST">
-                                        <input type="hidden" name="_subject" value="New email from website">
-                                        <input type="email" class="field" placeholder="Your email" required>
+
+                                        <div class="form-group">
+                                            <input type="hidden" name="_subject" value="New email from website">
+                                        </div>
+
+                                        <div class="form-group mb-2">
+                                            <label class="form-label" for="exampleInputEmail1">Email address</label>
+                                            <input type="email" class="form-control" required id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                                            <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
+                                        </div>
+
+                                        <div class="form-group mb-2">
+                                            <label class="form-label" for="name">Your name</label>
+                                            <input class="form-control" id="name" aria-describedby="enter your name" placeholder="Enter your name" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="hidden" name="_next" value="https://mauricebaez.dev/pages/thankyou.html">
+                                        </div>
+
+                                        <div class="form-group mb-2">
+                                            <label class="form-label" for="exampleFormControlTextarea1">Write your message here</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                                        </div>
+
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-primary mt-2">Send</button>
+                                        </div>
+
+                                        <!-- <input type="email" class="field" placeholder="Your email" required>
                                         <input type="text" class="field" placeholder="Your name">
                                         <input type="hidden" name="_next" value="https://mauricebaez.dev/pages/thankyou.html">
-                                        <textarea class="field" placeholder="Write your message here" required></textarea>
-                                        <button type="submit">Send</button>
+                                        <textarea class="field" placeholder="Write your message here" required></textarea> -->
                                     </form>
                                 </div>
                           </div>
